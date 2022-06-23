@@ -94,9 +94,23 @@ function battle() {
 
 // console.log(attacker, defender);
 
+
+
+
+
+
+
+
+
+
 async function waitingForResponse() {
-const response = await fetch("https://akabab.github.io/superhero-api/api");
+const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json")
 const fighterList = await response.json();
-console.table(fighterList);
+const fightersArray = Object.values(fighterList) 
+fightersArray.forEach(fighter => {
+    console.log(fighter.name);
+});
 }
 waitingForResponse()
+
+
