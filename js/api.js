@@ -4,7 +4,9 @@ const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0
 const fighterList = await response.json();
 
 fighterList.forEach(fighter => {
-    console.log(fighter.name);
+    const namesFighters = fighter.name;
+    const imgXsFighters = fighter.images.xs;
+    console.log(fighter.images.xs);
 });
 }
 waitingForResponse()
