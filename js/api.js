@@ -8,30 +8,34 @@ getNamesFighters(fighterList);
 waitingForResponse()
 
 
+
 // Names
 function getNamesFighters(array){
     array.forEach(fighter => {
-        const namesFighters = fighter.name;
-        const newDiv = document.createElement("div")
-        document.getElementById("names-fighters").appendChild(newDiv);
+        const newUl = document.createElement("ul")
+        document.getElementById("names-fighters").appendChild(newUl);
+        
+        const newLi = document.createElement("li")
+        newUl.appendChild(newLi)
+
         const newP = document.createElement("p")
-        newDiv.appendChild(newP)
-        newP.innerText = namesFighters
+        newLi.appendChild(newP)
+        newP.innerText = fighter.name
 
-        // newDiv.innerHTML = '<p> namesFighters.text </p>'
-        console.log(newDiv);
+        const newA = document.createElement("a")
+        newLi.appendChild(newA)
+
+        const newImg = document.createElement("img")
+        newA.appendChild(newImg)
+        newImg.src = fighter.images.xs;
+        newImg.classList.add("image-xs")
+        // console.log(newImg);
     });
-}
+};
 
 
-// ImagesXs
-// function getImagesXsFighters(array){
-//     array.forEach(fighter => {
-//         const imgXsFighters = fighter.images.xs;
-//         console.log(imgXsFighters);
-//     });
-// }
-
-
-
+document.getElementById("names-fighters").addEventListener("click", function(event){
+    if(event.target.classList.contains("image-xs")) console.log("click");
+    // afficher une petite 
+})
 

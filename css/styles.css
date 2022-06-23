@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: content-box;
     width: 100%;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* HEADER */ 
@@ -15,21 +17,28 @@
     color: whitesmoke;
     background: linear-gradient(#e66465, #9198e5);
     box-shadow: 6px 5px 5px black ;
+    margin-bottom: 1rem;
 }
 
 /* MAIN */ 
 .main{
-    border: 4px solid black;
-    height: 200px;
+    /* border: 4px solid black; */
 }
 
 /* FIGHTERS */
 .choose-fighters{
     
 }
-.choose-fighters-content{
-
+.names-fighters{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}   
+.image-xs{
+    width: 70px;
 }
-.images-fighters{
-
-}
+/* .image-xs:hover{
+    cursor: pointer;
+} */
