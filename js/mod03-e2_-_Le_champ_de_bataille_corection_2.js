@@ -90,6 +90,13 @@ function battle() {
     return battle();
 }
 
-battle();
+// battle();
 
 // console.log(attacker, defender);
+
+async function waitingForResponse() {
+const response = await fetch("https://akabab.github.io/superhero-api/api");
+const fighterList = await response.json();
+console.table(fighterList);
+}
+waitingForResponse()
