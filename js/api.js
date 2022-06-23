@@ -12,7 +12,14 @@ waitingForResponse()
 function getNamesFighters(array){
     array.forEach(fighter => {
         const namesFighters = fighter.name;
-        console.log(namesFighters);
+        const newDiv = document.createElement("div")
+        document.getElementById("names-fighters").appendChild(newDiv);
+        const newP = document.createElement("p")
+        newDiv.appendChild(newP)
+        newP.innerText = namesFighters
+
+        // newDiv.innerHTML = '<p> namesFighters.text </p>'
+        console.log(newDiv);
     });
 }
 
