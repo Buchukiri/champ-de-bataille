@@ -18,24 +18,17 @@ function getNamesFighters(array){
         const newLi = document.createElement("li")
         newUl.appendChild(newLi)
 
-        const newP = document.createElement("p")
-        newLi.appendChild(newP)
-        newP.innerText = fighter.name
+    
+        newLi.innerHTML = `<p>${fighter.name}</p> <a href="#"><img class="image-xs" src="${fighter.images.xs}"></a>`;
+       
+        
 
-        const newA = document.createElement("a")
-        newLi.appendChild(newA)
-
-        const newImg = document.createElement("img")
-        newA.appendChild(newImg)
-        newImg.src = fighter.images.xs;
-        newImg.classList.add("image-xs")
-        // console.log(newImg);
     });
 };
 
 
-document.getElementById("names-fighters").addEventListener("click", function(event){
-    if(event.target.classList.contains("image-xs")) console.log("click");
-    // afficher une petite 
-})
+const fighterImages = document.getElementById("names-fighters")
 
+// fighterImages.addEventListener("click", function (event) {
+//     this.classList.toggle("image-lg")
+// })
