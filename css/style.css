@@ -1,4 +1,4 @@
-:root {
+:root{
     /* Size */
     font-size: 12px;
 
@@ -18,12 +18,7 @@ body {
     color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
@@ -33,7 +28,7 @@ p {
     padding: 0;
 }
 
-ul {
+ul,li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -55,8 +50,8 @@ button:focus {
     outline: none;
 }
 
-/* HEADER */
-.header-ttl {
+/* HEADER */ 
+.header-ttl{
     margin: 1.5rem auto;
     padding: 1rem;
     text-align: center;
@@ -67,18 +62,16 @@ button:focus {
     width: 50%;
 }
 
-/* Main */
-.main-content {
+/* Main */ 
+.main-content{
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 1fr 1fr 1fr;
     gap: .5rem;
     margin: 1rem;
-}
+} 
 
-.select-fighter-ttl,
-.battle-fight-ttl,
-.caracteristic-fighter-ttl {
+.select-fighter-ttl, .battle-fight-ttl, .caracteristic-fighter-ttl{
     text-align: center;
     text-decoration: underline;
     padding: 1rem;
@@ -86,14 +79,15 @@ button:focus {
 
 
 /* Left-page */
-.main-content {}
+.main-content{
 
-.left-page {
+}
+
+.left-page{
     border: 2px solid yellow;
 }
 
-.list-champs,
-.list-fighters {
+.list-champs, .list-fighters{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 1rem;
@@ -104,7 +98,6 @@ button:focus {
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
 }
-
 /* .list-fighters{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -117,26 +110,42 @@ button:focus {
     scrollbar-width: thin;
 } */
 
-.list-fighters-content {}
+.list-fighters-content{
 
-.image-xs {
-    width: 50%;
 }
 
-.image-xs-middle {
+.image-xs{
+    width: 50%;
+}
+.image-xs-middle{
     width: 30%;
 }
 
-/* Middle-page */
-.middle-page {
+/* Middle-page */ 
+.middle-page{
     border: 2px solid green;
 }
 
-.battle-fight {}
+.battle-fight{
+
+}
 
 /* Right-page */
-.right-page {
+.right-page{
     border: 2px solid pink;
 }
 
-.caracteristic-fighter {}
+.caracteristic-fighter{
+
+}
+
+.stats-fighters-ttl {
+    height: 2rem;
+ 
+}
+.stats-fighters-li {
+  font-size: 2rem;
+    text-align: center;
+}
+
+
